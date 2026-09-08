@@ -46,25 +46,34 @@
           <h2 id="work-title">Selected work</h2>
         </div>
         <div class="work-grid">
-          <article class="work-card featured">
-            <div class="card-content">
+          <article class="work-card project-card featured" aria-labelledby="client-project-title">
+            <div class="project-copy">
               <p class="card-kicker">Client website delivery</p>
-              <h3>Client website delivery</h3>
+              <h3 id="client-project-title">Client website delivery</h3>
               <p class="card-subtitle">From an early idea to a live website</p>
-              <p>I worked directly with a local service business to take its site from an early idea to a live, mobile-friendly website. Alongside the build, I handled feedback rounds, hosting, the domain, email, and the basics of SEO.</p>
+              <p>I worked directly with a local service business to take its website from an early idea to a live, mobile-friendly delivery. I gathered feedback, refined the implementation through review rounds, and handled the practical work around hosting, the domain, email, and basic SEO.</p>
               <p class="detail">Built with TypeScript and React.</p>
               <a class="text-link" href="https://sensoskoczki.pl/" target="_blank" rel="noopener noreferrer">Visit the live website <span aria-hidden="true">↗</span></a>
             </div>
+            <aside class="project-evidence" aria-label="Client website delivery responsibilities">
+              <p class="evidence-label">What I owned</p>
+              <ul>
+                <li>Client communication and feedback loop</li>
+                <li>Implementation and responsive delivery</li>
+                <li>Hosting, domain, email, and SEO setup</li>
+              </ul>
+            </aside>
           </article>
-          <article class="work-card briefly-card" id="briefly" aria-labelledby="briefly-title">
-            <div class="briefly-copy">
-              <p class="card-kicker">Private project · local only</p>
+          <article class="work-card project-card briefly-card" id="briefly" aria-labelledby="briefly-title">
+            <div class="project-copy">
+              <p class="card-kicker">Open-source portfolio project · local only</p>
               <h3 id="briefly-title">Briefly</h3>
               <p class="card-subtitle">A focused workspace for turning videos into briefs</p>
-              <p>Briefly is a private Ruby on Rails workspace that turns public YouTube videos into structured, source-faithful briefs. It queues analysis, stores completed briefs, and makes them easy to revisit in a personal library.</p>
-              <p>I built the main application flows, asynchronous processing, retryable failure handling, persistent brief storage, and password-gated workspace access. The project was developed with AI assistance, but I reviewed and refactored the implementation and own the architecture and engineering decisions.</p>
-              <p class="detail">Ruby on Rails · SQLite · Solid Queue · Gemini · asynchronous processing</p>
-              <p class="project-note">Available locally; there is no public deployment or demo.</p>
+              <p>Briefly is a private, single-owner Ruby on Rails workspace that turns public YouTube videos into structured, source-faithful briefs. It persists analysis requests, processes them asynchronously with Gemini, and stores completed briefs in a small personal library.</p>
+              <p>I built the main Rails flows, durable background processing, retryable failure handling, password-gated workspace access, and the Gemini integration seam. The project was developed with AI assistance, but I reviewed and refactored the implementation and own the architecture and engineering decisions.</p>
+              <p class="detail">Rails 8.1 · SQLite · Solid Queue · Tailwind CSS · Gemini API · automated tests</p>
+              <p class="project-note">Available as a downloadable local project; there is no public deployment or demo.</p>
+              <a class="text-link" href="https://github.com/bakercodemaker/Briefly" target="_blank" rel="noopener noreferrer">View the source and setup instructions <span aria-hidden="true">↗</span></a>
             </div>
             <div class="briefly-gallery" aria-label="Briefly application screenshots">
               <figure>
@@ -99,11 +108,11 @@
         <div class="experience-list">
           <article class="experience-item">
             <div class="experience-meta"><p>Aug 2025—Feb 2026</p><p>Software Engineer</p></div>
-            <div><h3>Shelfio</h3><p>Worked on a Dockerized access product that connected software with physical hardware. Built Rails and API features, and collaborated on MQTT message flows, location-based access, and improvements across the system.</p></div>
+            <div><h3>Shelfio</h3><p>Worked on a Dockerized access product connecting Rails/API software with physical hardware. Delivered defined Rails and API features, collaborated on MQTT message flows, location-based access, authentication, and containerized workflows, and investigated session-state issues across software and hardware boundaries through logs, tests, and repeatable local reproduction.</p></div>
           </article>
           <article class="experience-item">
             <div class="experience-meta"><p>Feb 2022—Aug 2024</p><p>Software Engineer</p></div>
-            <div><h3>Lunar Logic</h3><p>Built Rails features, APIs, PostgreSQL data models, and integrations with AWS, payments, and external services. I also worked directly with clients to clarify what they needed.</p></div>
+            <div><h3>Lunar Logic</h3><p>Worked directly with clients to clarify requirements, break work into tickets, implement Rails features, test changes, and incorporate senior review before release to production. Built CRUD workflows, REST APIs, PostgreSQL data models, and integrations with AWS services, Stripe, SportsData.io, and Mailgun; also implemented Devise/Auth0 authentication, authorization policies, and user-whitelisting flows.</p></div>
           </article>
         </div>
       </section>
